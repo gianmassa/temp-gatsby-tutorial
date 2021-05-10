@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import styled from 'styled-components'
 
 const Contact = (props) => {
   return (
@@ -24,11 +23,11 @@ const Contact = (props) => {
           <article>
             <form className="form contact-form">
               <div className="form-row">
-                <label htmlGor="name">Your Name</label>
+                <label htmlFor="name">Your Name</label>
                 <input type="text" name="name" id="name" />
               </div>
               <div className="form-row">
-                <label htmlGor="email">Your Email</label>
+                <label htmlFor="email">Your Email</label>
                 <input type="text" name="email" id="email" />
               </div>
               <div className="form-row">

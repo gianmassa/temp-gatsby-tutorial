@@ -7,9 +7,9 @@ const Navbar = (props) => {
   const [show, setShow] = useState(false)
 
   return (
-    <nav class="navbar">
-      <div class="nav-center">
-        <div class="nav-header">
+    <nav className="navbar">
+      <div className="nav-center">
+        <div className="nav-header">
           <Link to="/">
             <img src={logo} alt="Simply Recipes Logo" />
           </Link>
@@ -17,7 +17,7 @@ const Navbar = (props) => {
             <FiAlignJustify />
           </button>
         </div>
-        <div class={show ? "nav-links show-links" : "nav-links"}>
+        <div className={show ? "nav-links show-links" : "nav-links"}>
           <Link to="/" className="nav-link" activeClassName="active-link" onClick={()=>setShow(false)}>Home</Link>
           <Link to="/recipes" className="nav-link" activeClassName="active-link" onClick={()=>setShow(false)}>Recipes</Link>
           <Link to="/tags" className="nav-link" activeClassName="active-link" onClick={()=>setShow(false)}>Tags</Link>
