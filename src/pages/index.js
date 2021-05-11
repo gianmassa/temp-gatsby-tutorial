@@ -15,7 +15,7 @@ export default function Home() {
           />
         <div className="hero-container">
           <div className="hero-text">
-            <h1>Simply Recipes</h1>
+            <h1>Simply Recipe</h1>
             <h4>no flurr, just recipes</h4>
           </div>
         </div>
