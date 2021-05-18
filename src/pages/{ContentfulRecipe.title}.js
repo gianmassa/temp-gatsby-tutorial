@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import { graphql, Link } from 'gatsby'
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import {BsClockHistory, BsClock, BsPeople} from 'react-icons/Bs'
+import slugify from 'slugify'
 
 const RecipeTemplate = ({ data }) => {
   const {title, prepTime, cookTime, servings, image, content, description:{description}} = data.contentfulRecipe
@@ -39,7 +40,7 @@ const RecipeTemplate = ({ data }) => {
               </div>
               {/* tags */}
               <p className="recipe-tags">
-                Tags: {tags.map((tag, index) => <Link to={`/${tag}`} key={index}>{tag}</Link>)}
+                Tags: {tags.map((tag, index) => <Link to={`/tags/${slugify(tag, {lower:true})}`} key={index}>{tag}</Link>)}
               </p>
             </article>
           </section>
