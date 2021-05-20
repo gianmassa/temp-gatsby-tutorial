@@ -12,7 +12,7 @@ const Footer = (props) => {
 const Styles = styled.footer`
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 11px;
   text-align: center;
 
   p {
