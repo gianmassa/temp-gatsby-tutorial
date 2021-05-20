@@ -2,13 +2,17 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link, graphql } from 'gatsby'
+
+import Seo from '../components/SEO'
 import RecipesList from '../components/RecipesList'
+
 
 const About = ({ data }) => {
   const recipes = data.allContentfulRecipe.nodes
 
 return (
     <Layout>
+      <Seo title="About Page" description="About Page Description" />
       <main className="page">
         <section className="about-page">
           <article>
