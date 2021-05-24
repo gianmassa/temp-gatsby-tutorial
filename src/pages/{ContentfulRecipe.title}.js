@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
-import {BsClockHistory, BsClock, BsPeople} from 'react-icons/Bs'
+import {BsClockHistory, BsClock, BsPeople} from 'react-icons/bs'
 import slugify from 'slugify'
 
 import Layout from '../components/Layout'
